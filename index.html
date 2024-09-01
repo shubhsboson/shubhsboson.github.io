@@ -15,6 +15,25 @@
 </head>
 
 <body>
+    <div id="title_bar">
+        <button id="btn_toggle_dark_mode" onclick="toggleDarkMode()">
+            <svg width="30" height="30" id="sun_icon">
+                <circle cx="15" cy="15" r="6" fill="currentColor" />
+                <line id="ray" stroke="currentColor" stroke-width="2" stroke-linecap="round" x1="15" y1="1" x2="15"
+                    y2="4"></line>
+                <use href="#ray" transform="rotate(45 15 15)" />
+                <use href="#ray" transform="rotate(90 15 15)" />
+                <use href="#ray" transform="rotate(135 15 15)" />
+                <use href="#ray" transform="rotate(180 15 15)" />
+                <use href="#ray" transform="rotate(225 15 15)" />
+                <use href="#ray" transform="rotate(270 15 15)" />
+                <use href="#ray" transform="rotate(315 15 15)" />
+            </svg>
+            <svg width="30" height="30" id="moon_icon">
+                <path fill="currentColor" d="M 23, 5 A 12 12 0 1 0 23, 25 A 12 12 0 0 1 23,5" />
+            </svg>
+        </button>
+    </div>
     <div id="banner_container">
         <div id="banner_image" class="centerProperty"> <img src="assets/images/me/me_one.jpeg"
                 alt="Picture of me in a red t-shirt wearing round tinted sunglasses inside Munich Maker Lab with several projects on the left, an electronics vending machine in the middle, a document drawer and some office equipment to the right partially visible in the background.">
@@ -25,6 +44,7 @@
             <p>My <a class="hyperlink" href="tinkering-journal">tinkering-journal</a>.</p>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 
 </html>

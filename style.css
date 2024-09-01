@@ -15,6 +15,16 @@ p {
     font-size: 20px;
 }
 
+#title_bar {
+    display: flex;
+    justify-content: right;
+}
+
+#btn_toggle_dark_mode {
+    all: unset;
+    cursor: pointer;
+}
+
 #banner_container {
     display: inline-block;
     width: 100%;
@@ -43,4 +53,13 @@ p {
     color: var(--bg-clr);
     border-radius: 2px;
     padding: 0px 2px;
+}
+
+.dark_mode {
+    --bg-clr: rgb(0, 0, 0);
+    --txt-clr: rgb(0, 68, 0);
+
+    #banner_image img {
+        filter: brightness(40%)
+    }
 }
